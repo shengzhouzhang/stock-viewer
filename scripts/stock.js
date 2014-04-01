@@ -5,10 +5,14 @@
 sv.dal.Stock = function(raw) {
   var fields = this.getFields_(raw);
 
-  this.name = fields.name;
+  this.name = this.parseName_(fields.name);
   this.price = parseFloat(fields.price);
   this.time = new Date(fields.utctime);
   this.volume = parseInt(fields.volume);
+};
+
+sv.dal.Stock.prototype.parseName_ = function(name) {
+  return name.split('/').join(' / ');
 };
 
 sv.dal.Stock.prototype.getFields_ = function(raw) {

@@ -1,7 +1,9 @@
 
-<div>
-  <div><%= stock.name %></div>
-  <div><%= stock.price %></div>
-  <div><%= stock.time %></div>
-  <div><%= stock.volume %></div>
+<div class="stock-summary-view">
+  <div class="stock-name"><%= stock.name %></div>
+  <div class="wrapper">
+    <div class="stock-price">$<%= stock.price %></div>
+    <div class="stock-volume">Available: <%= stock.volume %></div>
+  </div>
+
 </div>

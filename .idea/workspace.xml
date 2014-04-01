@@ -23,19 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="main.less" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/main.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="8" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0466563" vertical-offset="0" max-vertical-offset="643">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/main.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="45" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="52" column="2" selection-start="801" selection-end="801" vertical-scroll-proportion="0.65007776" vertical-offset="362" max-vertical-offset="1020">
               <folding />
             </state>
           </provider>
@@ -44,7 +35,16 @@
       <file leaf-file-name="stock.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/stock.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="5" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="180">
+            <state line="3" column="21" selection-start="98" selection-end="105" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="17" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
               <folding />
             </state>
           </provider>
@@ -53,7 +53,7 @@
       <file leaf-file-name="stock.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/stock.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+            <state line="16" column="0" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -75,7 +75,7 @@
       <file leaf-file-name="base.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/base.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="38" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="735">
+            <state line="56" column="10" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="945">
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -95,7 +95,6 @@
       <list>
         <option value="$PROJECT_DIR$/app/index.html" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/styles/main.less" />
         <option value="$PROJECT_DIR$/libs/jquery-2.1.0.min.js" />
         <option value="$PROJECT_DIR$/libs/require.js" />
         <option value="$PROJECT_DIR$/libs/underscore.min.js" />
@@ -104,17 +103,18 @@
         <option value="$PROJECT_DIR$/data/stock.data.json" />
         <option value="$PROJECT_DIR$/scripts/data.js" />
         <option value="$PROJECT_DIR$/scripts/common.js" />
-        <option value="$PROJECT_DIR$/scripts/base.js" />
         <option value="$PROJECT_DIR$/scripts/stock.js" />
+        <option value="$PROJECT_DIR$/scripts/base.js" />
+        <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/templates/stock.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scripts/main.js" />
+        <option value="$PROJECT_DIR$/styles/main.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="450" />
-    <option name="y" value="22" />
+    <option name="x" value="242" />
+    <option name="y" value="151" />
     <option name="width" value="1356" />
     <option name="height" value="790" />
   </component>
@@ -187,6 +187,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stock-viewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stock-viewer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="styles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,7 +300,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="450" y="22" width="1356" height="790" extended-state="0" />
+    <frame x="242" y="151" width="1356" height="790" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -410,22 +424,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="414">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/base.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="38" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="735">
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/data.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="2" selection-start="188" selection-end="255" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -437,30 +435,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/stock.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="13" selection-start="233" selection-end="233" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+        <state line="16" column="0" selection-start="376" selection-end="376" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
           <folding>
             <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stock.html">
+    <entry file="file://$PROJECT_DIR$/scripts/base.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="5" selection-start="6" selection-end="6" vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="180">
-          <folding />
+        <state line="56" column="10" selection-start="1053" selection-end="1053" vertical-scroll-proportion="0.0" vertical-offset="278" max-vertical-offset="945">
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="45" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="17" column="0" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stock.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="21" selection-start="98" selection-end="105" vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="210">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="8" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0466563" vertical-offset="0" max-vertical-offset="643">
+        <state line="3" column="126" selection-start="165" selection-end="165" vertical-scroll-proportion="0.06998445" vertical-offset="0" max-vertical-offset="643">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="2" selection-start="801" selection-end="801" vertical-scroll-proportion="0.65007776" vertical-offset="362" max-vertical-offset="1020">
           <folding />
         </state>
       </provider>

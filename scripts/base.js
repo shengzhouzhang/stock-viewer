@@ -27,7 +27,7 @@ assDateTime = function(val) {
     throw 'Invalid Date';
 }
 
-fetchTemplate = function(name, callback) {
+fetchAllTemplates = (function(name) {
 
   var templates = window.sv.templates;
 
@@ -35,12 +35,26 @@ fetchTemplate = function(name, callback) {
     $.ajax({
       url:'templates/' + name + '.html',
       success:function(data) {
+        window.sv.templates[name] = data;
+      }
+    });
+  }
+})('stock');
+
+fetchTemplate = function(name, callback) {
+
+  var templates = window.sv.templates;
+
+  if (!templates[name]) {
+    $.ajax({
+      url:'templates/' + name + '.html',
+      success:function(data) {
+
         templates[name] = data;
-        callback(templates[name]);;
+        callback(data);
       }
     });
   } else {
     callback(templates[name]);
   }
-
 }
