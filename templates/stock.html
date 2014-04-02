@@ -1,5 +1,10 @@
 
 <div class="stock-summary-view">
+  <div class="stock-time-symbol-type-wrapper">
+    <div class="stock-time"><%= formatDate(stock.time) %></div>
+    <div class="stock-symbol"><%= stock.symbol %></div>
+    <div class="stock-type"><%= stock.type %></div>
+  </div>
   <div class="stock-name"><%= stock.name %></div>
   <div class="wrapper">
     <div class="stock-price">$<%= stock.price %></div>

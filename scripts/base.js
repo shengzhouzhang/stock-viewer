@@ -57,4 +57,8 @@ fetchTemplate = function(name, callback) {
   } else {
     callback(templates[name]);
   }
+};
+
+formatDate = function(date) {
+  return date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + date.getDate();
 }
