@@ -1,11 +1,36 @@
 module.exports = function(grunt) {
+  'use strict';
+
   // Project configuration.
   grunt.initConfig({
-    // start a simple HTTP server
-    connect: {
-      server: {
+    jshint: {
+      options: {
+        curly: true,
+        eqeqeq: true,
+        undef: true,
+        //strict: true,
+        //indent: true,
+        indent: 2,
+        latedef: true,
+        newcap: true,
+        browser: true,
+        jquery: true
+      },
+      uses_defaults: ['client/scripts/*.js', 'server/*.js'],
+      with_overrides: {
         options: {
-          port: 9000
+          node: true,
+          browser: false
+        },
+        files: {
+          src: ['server/*.js']
+        }
+      }
+    },
+    uglify: {
+      my_target: {
+        files: {
+          'dest/output.min.js': ['src/input1.js', 'src/input2.js']
         }
       }
     },
@@ -17,7 +42,7 @@ module.exports = function(grunt) {
         // or an Array of String for multiple entries
         // You can use globing patterns like `css/**/*.css`
         // See https://github.com/gruntjs/grunt-contrib-watch#files
-        files: ['index.html', 'styles/*.less', 'scripts/*.js'],
+        files: ['client/index.html', 'client/styles/*.less', 'client/scripts/*.js'],
         options: {
           livereload: {
             port: 9001
@@ -25,14 +50,14 @@ module.exports = function(grunt) {
         }
       },
       less: {
-        files: 'styles/*.less',
+        files: 'client/styles/*.less',
         tasks: 'less'
       }
     },
     less: {
       development: {
         files: {
-          'styles/main.css': 'styles/*.less'
+          'client/styles/main.css': 'client/styles/*.less'
         }
       }
     },
@@ -40,18 +65,21 @@ module.exports = function(grunt) {
     open: {
       all: {
         // Gets the port from the connect configuration
-        path: 'http://localhost:<%= connect.server.options.port%>'
+        //path: 'http://localhost:<%= connect.server.options.port%>'
+        path: 'http://localhost:8000'
       }
     }
   });
 
   // load plugins.
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+  grunt.loadNpmTasks('grunt-jslint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-open');
 
   // creates tasks
-  grunt.registerTask('server', ['connect', 'open', 'watch']);
+  grunt.registerTask('server', ['open', 'watch']);
 
 };

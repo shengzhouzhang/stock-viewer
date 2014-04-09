@@ -1,0 +1,112 @@
+
+body {
+  padding-top: 40px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a:hover {
+  text-decoration:none;
+}
+
+span.price-up,
+span.volume-up {
+  color: green;
+}
+
+span.price-down,
+span.volume-down {
+  color: red;
+}
+
+span.price-normal,
+span.volume-normal {
+  color: #333;
+}
+
+div.stocks-container {
+
+  padding: 20px 0;
+
+  div.stock-summary-view:first-child {
+    margin-top: 10px;
+  }
+
+  div.stock-summary-view:not(:last-child) {
+    border-bottom: solid 1px #444;
+  }
+
+  div.stock-summary-view {
+
+    width: 100%;
+    padding: 10px 20px;
+    height: 180px;
+
+
+
+    div.stock-row {
+
+      line-height: 50px;
+      font-size: 18px;
+      clear: both;
+      vertical-align: baseline;
+
+      div.stock-name {
+        font-size: 24px;
+        font-weight: 500;
+        text-shadow: 0 0px 5px rgba(255, 255, 255, .5);
+      }
+
+      div.stock-name,
+      div.stock-time,
+      div.stock-symbol,
+      div.stock-type,
+      div.stock-hold {
+        float: left;
+        text-align: left;
+      }
+
+      div.stock-name {
+        margin-right: 20px;
+      }
+
+      div.stock-symbol,
+      div.stock-type {
+        margin-right: 20px;
+      }
+
+      div.stock-time,
+      div.stock-symbol,
+      div.stock-type {
+        font-size: 18px;
+      }
+
+      div.stock-price,
+      div.stock-volume {
+        float: right;
+        text-align: right;
+      }
+
+      input.stock-trade,
+      a.stock-buy,
+      a.stock-sell {
+        float: right;
+        margin-left: 20px;
+        border-radius: 5px;
+        margin-top: 11px;
+        line-height: 24px;
+      }
+
+      a.stock-buy,
+      a.stock-sell {
+        width: 60px;
+        display: inline-block;
+        padding: 3px 10px 4px 10px;
+      }
+    }
+  }
+}

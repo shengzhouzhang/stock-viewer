@@ -1,0 +1,104 @@
+div.stock-account-view {
+  padding: 40px 15px 40px 15px;
+  border-bottom: 1px solid #ccc;
+  height: 130px;
+}
+div.stock-account-view div.account-balance {
+  float: left;
+}
+div.stock-account-view div.account-value {
+  float: right;
+}
+div.stock-account-view a.add-balance {
+  margin: 20px 0 0 20px;
+  float: left;
+}
+
+body {
+  padding-top: 40px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a:hover {
+  text-decoration: none;
+}
+span.price-up,
+span.volume-up {
+  color: green;
+}
+span.price-down,
+span.volume-down {
+  color: red;
+}
+span.price-normal,
+span.volume-normal {
+  color: #333;
+}
+div.stocks-container {
+  padding: 20px 0;
+}
+div.stocks-container div.stock-summary-view:first-child {
+  margin-top: 10px;
+}
+div.stocks-container div.stock-summary-view:not(:last-child) {
+  border-bottom: solid 1px #444;
+}
+div.stocks-container div.stock-summary-view {
+  width: 100%;
+  padding: 10px 20px;
+  height: 180px;
+}
+div.stocks-container div.stock-summary-view div.stock-row {
+  line-height: 50px;
+  font-size: 18px;
+  clear: both;
+  vertical-align: baseline;
+}
+div.stocks-container div.stock-summary-view div.stock-row div.stock-name {
+  font-size: 24px;
+  font-weight: 500;
+  text-shadow: 0 0px 5px rgba(255, 255, 255, 0.5);
+}
+div.stocks-container div.stock-summary-view div.stock-row div.stock-name,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-time,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-symbol,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-type,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-hold {
+  float: left;
+  text-align: left;
+}
+div.stocks-container div.stock-summary-view div.stock-row div.stock-name {
+  margin-right: 20px;
+}
+div.stocks-container div.stock-summary-view div.stock-row div.stock-symbol,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-type {
+  margin-right: 20px;
+}
+div.stocks-container div.stock-summary-view div.stock-row div.stock-time,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-symbol,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-type {
+  font-size: 18px;
+}
+div.stocks-container div.stock-summary-view div.stock-row div.stock-price,
+div.stocks-container div.stock-summary-view div.stock-row div.stock-volume {
+  float: right;
+  text-align: right;
+}
+div.stocks-container div.stock-summary-view div.stock-row input.stock-trade,
+div.stocks-container div.stock-summary-view div.stock-row a.stock-buy,
+div.stocks-container div.stock-summary-view div.stock-row a.stock-sell {
+  float: right;
+  margin-left: 20px;
+  border-radius: 5px;
+  margin-top: 11px;
+  line-height: 24px;
+}
+div.stocks-container div.stock-summary-view div.stock-row a.stock-buy,
+div.stocks-container div.stock-summary-view div.stock-row a.stock-sell {
+  width: 60px;
+  display: inline-block;
+  padding: 3px 10px 4px 10px;
+}

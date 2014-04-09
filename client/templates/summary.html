@@ -1,0 +1,19 @@
+
+<div id="<%= stock.id %>" class="stock-summary-view">
+  <div class="stock-row">
+    <div class="stock-name"><%= stock.name %></div>
+    <div class="stock-time"><%= stock.time %></div>
+    <div class="stock-price">$<span><%= stock.price %></span></div>
+  </div>
+  <div class="stock-row">
+    <div class="stock-symbol"><%= stock.symbol %></div>
+    <div class="stock-type"><%= stock.type %></div>
+    <div class="stock-volume">Available: <span><%= stock.volume %></span></div>
+  </div>
+  <div class="stock-row">
+    <div class="stock-hold">My Holdings: <span>10</span></div>
+    <a class="btn btn-default stock-sell" data-toggle="modal" data-target="#stock-trade-modal" href="#">Sell</a>
+    <a class="btn btn-default stock-buy" data-toggle="modal" data-target="#stock-trade-modal" href="#">Buy</a>
+    <!--<input class="stock-trade" type="text">-->
+  </div>
+</div>
