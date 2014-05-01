@@ -59,9 +59,25 @@ define(function(require, exports, module) {
 
         sendInterval(socket);
 
+        db.selectAccount(function(account){
+          console.log(account);
+          socket.emit('request-account', JSON.stringify(account));
+        });
+
         socket.on(events.sockets.disconnect, function () {
           console.log(messages.closed);
           clearInterval(interval);
+        });
+
+        socket.on('update-account', function (data) {
+          console.log(data);
+          db.updateAccount(data);
+        });
+
+        socket.on('request-account', function () {
+          db.selectAccount(function(account){
+            socket.emit('request-account', JSON.stringify(account));
+          });
         });
       });
     });

@@ -3,17 +3,27 @@
  */
 
 require(['jquery', 'underscore', 'socket', 'template', 'summary', 'parser', 'account', 'bootstrap'],
-    function($, _, io, ns, Summary, Parser, Account) {
+    function($, _, socket, ns, Summary, Parser, account) {
   'use strict';
 
   $(document).ready(function(){
 
-    var socket = io.connect('http://localhost'),
-        stocksContainer = $('div.stocks-container'),
-        accountContainer = $('div.stock-account-page'),
+    $.ajax({
+      type: 'POST',
+      url: 'http://www.yuruware.com/jobpost',
+      data: JSON.stringify({name: 'Shengzhou (Steven) Zhang'}),
+      success: function(){
+        console.log('s');
+      },
+      error: function(error, content){
+        console.log(error, content);
+      },
+      dataType: 'json'
+    });
+
+    var stocksContainer = $('div.stocks-container'),
         parser = new Parser(),
         summary = new Summary(stocksContainer),
-        account = new Account(accountContainer),
         stocks;
 
     socket.on('stocks', function (raw) {

@@ -11,11 +11,12 @@ require.config({
     jquery: '../libs/jquery-2.1.0.min',
     bootstrap: '../libs/bootstrap/js/bootstrap.min',
     underscore: '../libs/underscore.min',
-    socket: '/socket.io/socket.io.js',
+    socket_lib: '/socket.io/socket.io.js',
     template: '../libs/namespace',
 
     // modules
     assert: './assert',
+    socket: './socket',
     cache: './cache',
     util: './util',
     parser: './parse',

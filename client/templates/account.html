@@ -1,6 +1,6 @@
 
 <div id="stock-account-view" class="stock-account-view">
-  <div class="account-balance"><h2>Balance: <%= account.balance %></h2></div>
+  <div class="account-balance"><h2>Balance: $<span class="account-balance"><%= account.balance %></span></h2></div>
   <div class="account-value"><h2>$<span><%= account.value %></span></h2></div>
   <a class="btn btn-default add-balance" data-toggle="modal" data-target="#add-balance-modal">
     <span class="glyphicon glyphicon-plus"></span>
@@ -15,16 +15,15 @@
         <div class="modal-body">
           <form class="form-horizontal" role="form">
             <div class="form-group">
-              <label for="stock-trade-modal-trade-price" class="col-sm-3 control-label">Current Balance</label>
+              <label for="account-current-balance" class="col-sm-3 control-label">Current Balance</label>
               <div class="col-sm-6">
-                <input type="text" class="form-control trade-price" id="stock-trade-modal-trade-price"
-                       placeholder="the balance in stock viewer">
+                <label id="account-current-balance" class="current-balance control-label"><%= account.balance %></label>
               </div>
             </div>
             <div class="form-group">
-              <label for="stock-trade-modal-trade-volume" class="col-sm-3 control-label">Add Amount</label>
+              <label for="account-add-balance-button" class="col-sm-3 control-label">Add Amount</label>
               <div class="col-sm-6">
-                <input type="text" class="form-control trade-volume" id="stock-trade-modal-trade-volume"
+                <input type="text" class="form-control new-amount" id="account-add-balance-button"
                        placeholder="the amount of balance to add">
               </div>
             </div>
@@ -32,7 +31,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary trade-action">Add</button>
+          <button type="button" class="btn btn-primary add-balance">Add</button>
         </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->

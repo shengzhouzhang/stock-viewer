@@ -2,7 +2,8 @@
  * Created by zhang on 6/04/2014.
  */
 
-define(['assert', 'template', 'underscore', 'util', 'tradeVM'], function(assert, templates, _, util, modal){
+define(['assert', 'template', 'underscore', 'util', 'tradeVM', 'account'],
+    function(assert, templates, _, util, modal, account){
   'use strict';
 
   function StockVM(stock, parent) {
@@ -37,13 +38,13 @@ define(['assert', 'template', 'underscore', 'util', 'tradeVM'], function(assert,
     $(this.sellElementId_).click(function(){
       modal.loadView('Sell Stock', vm.model, 'Buy');
       modal.action = function(price, volume) {
-        console.log(price, volume);
+        account.buy(this.model.symbol, price, volume);
       }
     });
     $(this.buyElementId_).click(function(){
       modal.loadView('Buy Stock', vm.model, 'Sell');
       modal.action = function(price, volume) {
-        console.log(price, volume);
+        account.sell(this.model.symbol, price, volume);
       }
     });
   }
